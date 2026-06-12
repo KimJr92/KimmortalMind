@@ -47,14 +47,14 @@ body {
 }
 
 .hero span {
-  color: #00ffd5;
+  color: #1f0645;
 }
 
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #00ffd5;
+  background: #1f0645;
   color: black;
   border-radius: 10px;
   text-decoration: none;
