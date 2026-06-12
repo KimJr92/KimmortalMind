@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Site</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">MySite</div>
+
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, ich bin <span>DEIN NAME</span></h1>
+    <p>Minimal. Kreativ. Always learning.</p>
+    <a href="#about" class="btn">Mehr über mich</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Hier kommt dein persönlicher Text rein. Beschreibe dich kurz,
+    ehrlich und interessant.
+  </p>
+
+  <ul class="highlights">
+    <li>🔥 Motivation: High</li>
+    <li>💻 Tech / Gaming / Fitness</li>
+    <li>🚀 Always improving</li>
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+
+  <div class="grid">
+    <img src="https://picsum.photos/400/400?1" onclick="openLightbox(this.src)">
+    <img src="https://picsum.photos/400/400?2" onclick="openLightbox(this.src)">
+    <img src="https://picsum.photos/400/400?3" onclick="openLightbox(this.src)">
+    <img src="https://picsum.photos/400/400?4" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="videos" class="section">
+  <h2>Videos</h2>
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests" class="section">
+  <h2>Interests</h2>
+
+  <div class="cards">
+    <div class="card">🎮 Gaming</div>
+    <div class="card">💪 Fitness</div>
+    <div class="card">💻 Coding</div>
+    <div class="card">🎵 Music</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <div class="contact-links">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">Discord</a>
+    <a href="mailto:mail@example.com">Email</a>
+  </div>
+
+  <div class="qr">
+    <p>QR Code hier später einfügen</p>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
