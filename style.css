@@ -38,12 +38,22 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 100vh;  /* ganze Bildschirmhöhe */
+  width; 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: linear-gradient(120deg, #111, #222);
+
+    /* 🔥 Background Image */
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;     /* füllt komplett */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  
 }
 
 .hero span {
